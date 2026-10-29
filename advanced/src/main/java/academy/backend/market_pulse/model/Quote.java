@@ -39,4 +39,16 @@ public class Quote {
         return instrument.getTicker() + ": " + price + " " + instrument.getCurrency()
                 + " " + direction + " " + changePercent.abs() + "%";
     }
+
+    public Instrument getInstrument() {
+        return instrument;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public BigDecimal getChangePercent() {
+        return changePercent;
+    }
 }

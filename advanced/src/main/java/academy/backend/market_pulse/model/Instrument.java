@@ -33,6 +33,18 @@ public abstract class Instrument {
      */
     public abstract String getType();
 
+    public String getTicker() {
+        return ticker;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Currency getCurrency() {
+        return currency;
+    }
+
     @Override
     public String toString() {
         return ticker + " — " + name + " (" + getDescription() + ")";
